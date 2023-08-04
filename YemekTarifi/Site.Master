@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="YemekTarifi.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Uygulaması</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	
+	<!-- CSS-->
+	<link rel="stylesheet" href="/Content/tema/css/style.css">
+	<link rel="stylesheet" href="/Content/tema/css/colors/green.css" id="colors">
+</head>
+<body>
+    
+<div id="wrapper">
+
+<header id="header">
+<div class="container">
+
+	<!-- Logo -->
+	<div class="three columns">
+		<div id="logo">
+			<h1><a href="/"><img src="/Content/tema/images/logo.png" alt="Chow" style="width: 130px; height: 70px"/></a></h1>
+		</div>
+	</div>
+
+
+<!-- Navigation -->
+<div class="thirteen columns navigation">
+	<nav id="navigation" class="menu nav-collapse">
+		<ul>
+			<li><a href="/">Anasayfa</a></li>
+			<li><a href="tarifler">Tarif Ekle</a></li>
+			<li><a href="about">Hakkımızda</a></li>
+			<li><a href="contact">İletişim</a></li>
+
+		</ul>
+	</nav>
+</div>
+
+</div>
+</header>
+
+<!-- Content -->
+
+<div class="margin-top-10"></div>
+<div class="container">
+
+<asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+</div>
+
+
+</div>
+<!-- Footer -->
+<div id="footer">
+
+	<div class="container">
+
+		<div class="five columns">
+			<h3 class="headline footer">Hakkımızda</h3>
+			<span class="line"></span>
+			<div class="clearfix"></div>
+			<p>Sizlere güzel tarifler sunmak için buradayız. Tarif@ ile bugün ne pişirsem derdine son!</p>
+		</div>
+
+		<div class="three columns">
+
+			<h3 class="headline footer">Arşivler</h3>
+			<span class="line"></span>
+			<div class="clearfix"></div>
+
+			<ul class="footer-links">
+				<li><a href="#">Haziran 2022</a></li>
+				<li><a href="#">Temmuz 2022</a></li>
+				<li><a href="#">Ağustos 2022</a></li>
+				<li><a href="#">Eylül 2022</a></li>
+				<li><a href="#">Ekim 2022</a></li>
+			</ul>
+
+		</div>
+
+		<div class="three columns">
+
+			<h3 class="headline footer">Tarifler</h3>
+			<span class="line"></span>
+			<div class="clearfix"></div>
+
+			<ul class="footer-links">
+				<li><a href="browse-recipes.html">Tariflere gözat</a></li>
+				<li><a href="recipe-page-1.html">Tarif Sayfası</a></li>
+				<li><a href="submit-recipe.html">Tarif Gönder</a></li>
+			</ul>
+
+		</div>
+
+		<div class="five columns">
+
+			<h3 class="headline footer">Bülten</h3>
+			<span class="line"></span>
+			<div class="clearfix"></div>
+			<p>Yeni ürün duyuruları, hediye fikirleri, indirimler ve daha fazlası hakkında e-posta güncellemeleri almak için kaydolun.</p>
+
+			<form action="#" method="get">
+				<input class="newsletter" type="text" placeholder="mail@example.com" value=""/>
+				<button class="newsletter-btn" type="submit">Kaydol</button>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Footer Bottom / Start -->
+<div id="footer-bottom">
+
+	<div class="container">
+
+		<div class="eight columns">© Copyright 2014 by <a href="#">Tarif@</a>. All Rights Reserved.</div>
+
+	</div>
+
+</div>
+<!-- Footer Bottom / End -->
+
+<div id="backtotop"><a href="#"></a></div>
+
+        <!-- Java Script -->
+    <script src="Content/tema/scripts/jquery-1.11.0.min.js"></script>
+    <script src="/Content/tema/scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Content/tema/scripts/jquery.superfish.js"></script>
+    <script src="/Content/tema/scripts/jquery.royalslider.min.js"></script>
+    <script src="/Content/tema/scripts/responsive-nav.js"></script>
+    <script src="/Content/tema/scripts/hoverIntent.js"></script>
+    <script src="/Content/tema/scripts/isotope.pkgd.min.js"></script>
+    <script src="/Content/tema/scripts/chosen.jquery.min.js"></script>
+    <script src="/Content/tema/scripts/jquery.tooltips.min.js"></script>
+    <script src="/Content/tema/scripts/jquery.magnific-popup.min.js"></script>
+    <script src="/Content/tema/scripts/jquery.pricefilter.js"></script>
+    <script src="/Content/tema/scripts/custom.js"></script>
+</body>
+
+</html>
+
+     
